@@ -1,0 +1,10 @@
+<h1>Click to see each person and their meals</h1>
+
+<% @people.each do |person| %>
+  <h2><%= link_to person.name, person %></h2>
+<% end %><br>
+
+
+<%= link_to "Create a new person", new_person_path  %>
+
+<%# link_to "Create a new meal", new_meal_path%>
