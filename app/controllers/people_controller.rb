@@ -37,7 +37,6 @@ class PeopleController < ApplicationController
   end
 
   def destroy
-    @person.meals.destroy_all
     @person.destroy
     flash[:notice] = "Person deleted!"
     redirect_to people_path
